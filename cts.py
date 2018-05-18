@@ -13,8 +13,7 @@ def getOperation(op):
 		return "-"
 	else:
 		return "/"
-
-
+	
 def getPretty(data):
 	if isinstance(data['lhs'],dict):
 		lhs = getPretty(data['lhs'])
@@ -28,7 +27,6 @@ def getPretty(data):
 
 	return '('+lhs+getOperation(data['op'])+rhs+')'
 
-
 with open('data.json') as f:
     data = json.load(f)
 
@@ -41,13 +39,10 @@ newstrs = newstr.replace(")", "")
 
 # print newstrs
 
-
 lens = len(newstrs)
 
 # print newstrs[lens-2]
-
 # for i in range(0,lens):
-
 
 def isOperand(c):
     if c != "": 
@@ -76,7 +71,6 @@ def calc(op, num1, num2):
     	return str(float(num1) * float(num2))
     if op == "/": 
     	return str(float(num1) / float(num2))
-
 
 def findX(expr):
     expr = list(expr)
@@ -134,7 +128,6 @@ def findX(expr):
             stackNum.append(calc(c, num1, num2))
             
     return stackNum.pop()
-
 
 expr = "2*4+5"
 # expr = "(21-1)/10"
