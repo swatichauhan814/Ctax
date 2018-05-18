@@ -162,7 +162,6 @@ expr = "(21-1)/10"
 # 	return '('+lhs+rhs+ getOperation(data['op'])+')'
 
 # var = getTrans(expression)
-
 # print var
 
 # def oppOp(op):
