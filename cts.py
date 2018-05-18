@@ -149,7 +149,6 @@ expr = "(21-1)/10"
 
 # 	return lhs+getOperation(rhs+data['op'])
 
-
 # def getTrans(data):
 # 	if isinstance(data['lhs'],dict):
 # 		lhs = getTrans(data['lhs'])
@@ -161,7 +160,6 @@ expr = "(21-1)/10"
 # 		rhs = str(data['rhs'])
 
 # 	return '('+lhs+rhs+ getOperation(data['op'])+')'
-
 
 # var = getTrans(expression)
 
